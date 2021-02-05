@@ -2,4 +2,3 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: awesome-app-sa
-  namespace: awesome-app
