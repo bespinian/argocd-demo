@@ -21,10 +21,7 @@ spec:
           imagePullPolicy: Always
           env:
             - name: APP_TITLE
-              valueFrom:
-                configMapKeyRef:
-                  name: awesome-app-config
-                  key: appTitle
+              value: "Something even awesomer!"
             - name: DB_HOST
               valueFrom:
                 configMapKeyRef:
