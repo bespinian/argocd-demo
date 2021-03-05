@@ -2,7 +2,7 @@
 A simple demo of ArgoCD
 
 ## Setup of ArgoCD on a cluster
-First we need to set up ArgoCD on the cluster. For this part we follow the (instruction given by ArgoCD)[https://argoproj.github.io/argo-cd/getting_started/]. After this step we have the ArgoCD controller installed along with the CRDs that ArgoCD defines.
+First we need to set up ArgoCD on the cluster. For this part we follow the [instruction given by ArgoCD](https://argoproj.github.io/argo-cd/getting_started/). After this step we have the ArgoCD controller installed along with the CRDs that ArgoCD defines.
 
 ## Setup of a simple application
 Next we deploy a simple application with ArgoCD. For this purpose we first create a new namespace for our application:
