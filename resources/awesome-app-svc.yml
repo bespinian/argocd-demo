@@ -5,7 +5,6 @@ metadata:
   labels:
     app: awesome-app
 spec:
-  type: LoadBalancer
   ports:
     - name: web
       port: 80
