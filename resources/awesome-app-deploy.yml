@@ -21,16 +21,10 @@ spec:
           imagePullPolicy: Always
           env:
             - name: APP_TITLE
-              value: "Something even awesomer!"
+              value: Something awesome!
             - name: DB_HOST
-              valueFrom:
-                configMapKeyRef:
-                  name: awesome-app-config
-                  key: dbHost
+              value: db.bespinian.io
             - name: APP_VERSION
-              valueFrom:
-                configMapKeyRef:
-                  name: awesome-app-config
-                  key: appVersion
+              value: 1.0.0
           ports:
             - containerPort: 8080
