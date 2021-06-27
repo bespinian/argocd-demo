@@ -4,3 +4,12 @@ bases:
   - ../../resources
 patchesStrategicMerge:
   - awesome-app-ing-overlay.yml
+images:
+  - name: bespinian/awesome-image
+    newTag: 2.0.0
+configMapGenerator:
+  - name: awesome-config
+    literals:
+      - appTitle=Something even awesomer!
+      - dbHost=db.bespinian.io
+      - appVersion=2.0.0

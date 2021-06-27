@@ -17,14 +17,23 @@ spec:
       serviceAccountName: awesome-app-sa
       containers:
         - name: awesome-app
-          image: bespinian/awesome-image:2.0.0
+          image: bespinian/awesome-image
           imagePullPolicy: Always
           env:
             - name: APP_TITLE
-              value: Something even awesomer!
+              valueFrom:
+                configMapKeyRef:
+                  name: awesome-config
+                  key: appTitle
             - name: DB_HOST
-              value: db.bespinian.io
+              valueFrom:
+                configMapKeyRef:
+                  name: awesome-config
+                  key: dbHost
             - name: APP_VERSION
-              value: 2.0.0
+              valueFrom:
+                configMapKeyRef:
+                  name: awesome-config
+                  key: appVersion
           ports:
             - containerPort: 8080

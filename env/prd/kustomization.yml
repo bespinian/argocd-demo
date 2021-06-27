@@ -2,3 +2,12 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 bases:
   - ../../resources
+images:
+  - name: bespinian/awesome-image
+    newTag: 1.0.0
+configMapGenerator:
+  - name: awesome-config
+    literals:
+      - appTitle=Something awesome!
+      - dbHost=db.bespinian.io
+      - appVersion=1.0.0
