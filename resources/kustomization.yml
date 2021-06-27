@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ./awesome-app-cm.yml
+  - ./awesome-app-sa.yml
+  - ./awesome-app-deploy.yml
+  - ./awesome-app-svc.yml
+  - ./awesome-app-ing.yml
+

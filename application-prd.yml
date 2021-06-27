@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: awesome-app
+  name: awesome-app-prd
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/bespinian/argocd-demo.git
-    targetRevision: HEAD
-    path: resources
+    targetRevision: prd
+    path: env/prd
   destination:
     server: https://kubernetes.default.svc
-    namespace: awesome-gitops
+    namespace: awesome-gitops-prd
   syncPolicy:
     automated:
       prune: true

@@ -1,0 +1,15 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: awesome-app-ingress
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /awesome-int/?(.*)
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: awesome-app
+                port:
+                  name: web
