@@ -10,4 +10,4 @@ configMapGenerator:
     literals:
       - appTitle=Something even more awesome indeed!
       - dbHost=db.bespinian.io
-      - appVersion=2.0.0
+      - appVersion=2.0.1
