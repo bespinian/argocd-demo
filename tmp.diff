@@ -1,0 +1,18 @@
+diff --git a/env/prd/kustomization.yml b/env/prd/kustomization.yml
+index a025aa3..6a0b325 100644
+--- a/env/prd/kustomization.yml
++++ b/env/prd/kustomization.yml
+@@ -4,10 +4,10 @@ bases:
+   - ../../resources
+ images:
+   - name: bespinian/awesome-image
+-    newTag: 1.0.0
++    newTag: 2.0.0
+ configMapGenerator:
+   - name: awesome-config
+     literals:
+-      - appTitle=Something awesome!
++      - appTitle=Something even more awesome!
+       - dbHost=db.bespinian.io
+-      - appVersion=1.0.0
++      - appVersion=2.0.0

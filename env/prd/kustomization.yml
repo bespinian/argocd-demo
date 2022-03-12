@@ -8,6 +8,6 @@ images:
 configMapGenerator:
   - name: awesome-config
     literals:
-      - appTitle=Something even more awesome!
+      - appTitle=Something even more awesome indeed!
       - dbHost=db.bespinian.io
       - appVersion=2.0.0
